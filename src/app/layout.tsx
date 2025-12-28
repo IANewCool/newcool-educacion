@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Educacion - NewCooltura Informada",
+  title: "Educacion Superior Chile | NewCooltura Informada",
   description: "Buscador de universidades, becas, calculadora de financiamiento, proceso de admision PAES y beneficios estudiantiles en Chile",
+  keywords: ["universidades Chile", "becas estudiantiles", "PAES", "admision universitaria", "gratuidad"],
+  openGraph: {
+    title: "Educacion Superior Chile - NewCooltura Informada",
+    description: "Universidades, becas y admision PAES",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
